@@ -482,10 +482,8 @@ def get_default_configs() -> List[SiteConfig]:
 # --------------- CLI / main ----------------
 async def main():
     print("Nigeria Solar Scraper")
-    print("1) Quick Test (single site)")
-    print("2) Run full scrape (Jumia, Konga, Jiji)")
-    print("3) Run only Jumia static")
-    ch = input("Choose (1/2/3) [default 1]: ").strip() or "1"
+    print("Running full scrape for Jumia, Konga, Jiji")
+    ch = "2"
 
     scraper = NigeriaSolarScraper(output_dir="./scraped_data")
     configs = get_default_configs()
